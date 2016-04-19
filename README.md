@@ -1,19 +1,19 @@
-##Cohort Statistics
+#Cohort Statistics
 
-An exercise I completed to practice building an app with object-orientation in mind.
+An exercise I completed to practice building an app with object-orientation in mind
 
-The files contained in `models` comprise an object-oriented system to keep track of students in an educational environment.
+The files contained in `models` comprise an object-oriented system to keep track of students in an educational environment
 
-###Models
+##Models
 
-#####`cohort`
-* Initialized With
+####`cohort`
+* Initialized With:
   * title
   * start_date
   * end_date
   * students
   * system checks
-* Instance Methods
+* Instance Methods:
   * enroll
     * adds student to `students` array
   * assign
@@ -23,32 +23,32 @@ The files contained in `models` comprise an object-oriented system to keep track
   * system_check_completed?
     * checks if all students have completed a system check
 
-#####`lesson`
-* Initialized With
+####`lesson`
+* Initialized With:
   * name
   * body
 
-#####`student`
-* Initialized With
+####`student`
+* Initialized With:
   * name
   * email
 
-#####`system_check_submission`
-* Initialized With
+####`system_check_submission`
+* Initialized With:
   * solution
   * student
-* Instance Methods
+* Instance Methods:
   * assign_grade
     * assigns grade to correct student
   * graded?
     * checks whether or not submission has been graded
 
-#####`system_check`
-* Initialized With
+####`system_check`
+* Initialized With:
   * name
   * due_date
   * submissions
-* Instance Methods
+* Instance Methods:
   * add_submission
     * adds submission to `submissions` array
   * average_grade
