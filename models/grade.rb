@@ -1,4 +1,3 @@
-# For Exceeds Expecations
 module Grade
   MEETS_EXPECTATIONS = 2
   EXCEEDS_EXPECTATIONS = 3
@@ -9,6 +8,5 @@ module Grade
     DOES_NOT_MEET_EXPECTATIONS,
     MAKEUP_POINT,
     MEETS_EXPECTATIONS,
-    EXCEEDS_EXPECTATIONS
-  ]
+    EXCEEDS_EXPECTATIONS ]
 end

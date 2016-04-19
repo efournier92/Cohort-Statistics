@@ -1,4 +1,3 @@
-# For Exceeds Expecations
 class Video < Lesson
   def initialize
     @url

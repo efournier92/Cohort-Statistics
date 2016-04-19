@@ -9,5 +9,5 @@ module Submitting
     end
     submittable
   end
-  
+
 end

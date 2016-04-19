@@ -1,7 +1,5 @@
-# For Exceeds Expecations
-require_relative "student.rb"
+require_relative 'student.rb'
 class Cohort
-
   attr_reader :title, :start_date, :end_date, :students, :system_checks
 
   def initialize(title, start_date, end_date)
@@ -48,5 +46,5 @@ class Cohort
     end
     completed
   end
-  
+
 end

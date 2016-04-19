@@ -1,18 +1,18 @@
 #For Exceeds Expecations
-require "spec_helper"
+require 'spec_helper'
 
 describe SystemCheck do
   let(:system_check) do
-    due = Date.parse("2015/08/21")
-    SystemCheck.new("Grocery List with AJAX", due)
+    due = Date.parse('2015/08/21')
+    SystemCheck.new('Grocery List with AJAX', due)
   end
-  let(:jane) { Student.new("Jane Smith", "jane.smith@gmail.com") }
-  let(:john) { Student.new("John Smith", "john.smith@gmail.com") }
-  let(:jack) { Student.new("Jack Smith", "jack.smith@gmail.com") }
+  let(:jane) { Student.new('Jane Smith', 'jane.smith@gmail.com') }
+  let(:john) { Student.new('John Smith', 'john.smith@gmail.com') }
+  let(:jack) { Student.new('Jack Smith', 'jack.smith@gmail.com') }
 
-  describe "#average_grade" do
-    it "returns the average score for all submissions" do
-      submission_1 = SystemCheckSubmission.new("binding.pry", jane)
+  describe '#average_grade' do
+    it 'returns the average score for all submissions' do
+      submission_1 = SystemCheckSubmission.new('binding.pry', jane)
       system_check.add_submission(submission_1)
       submission_1.assign_grade(Grade::MEETS_EXPECTATIONS)
 
@@ -33,10 +33,10 @@ describe SystemCheck do
     end
   end
 
-  describe "#did_student_complete_system_check?" do
+  describe '#did_student_complete_system_check?' do
     it "returns 'true' if a submission exists for that student" do
-      system_check = SystemCheck.new("Grocery List using Postgres", Date.parse("2015/08/28"))
-      submission = SystemCheckSubmission.new("Bounding Box", jane)
+      system_check = SystemCheck.new('Grocery List using Postgres', Date.parse('2015/08/28'))
+      submission = SystemCheckSubmission.new('Bounding Box', jane)
       system_check.add_submission(submission)
 
       expect(system_check.did_student_complete_system_check?(jane)).
@@ -44,7 +44,7 @@ describe SystemCheck do
     end
 
     it "returns 'false' if submission does not exist for that student" do
-      system_check = SystemCheck.new("Grocery List using Postgres", Date.parse("2015/08/28"))
+      system_check = SystemCheck.new('Grocery List using Postgres', Date.parse('2015/08/28'))
       expect(system_check.did_student_complete_system_check?(jack)).
       to eq(false)
     end

@@ -1,6 +1,4 @@
-# For Exceeds Expecations
 class Student
-
   attr_reader :name, :email
 
   def initialize(name, email)

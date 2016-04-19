@@ -1,13 +1,13 @@
-require "date"
-require "pry"
-require "rspec"
+require 'pry'
+require 'date'
+require 'rspec'
 
-require_relative "../lib/cohort"
-require_relative "../lib/grade"
-require_relative "../lib/student"
-require_relative "../lib/system_check"
-require_relative "../lib/system_check_submission"
-require_relative "../lib/lesson"
-require_relative "../lib/submittable"
-require_relative "../lib/article"
-require_relative "../lib/challenge"
+require_relative '../models/cohort'
+require_relative '../models/grade'
+require_relative '../models/student'
+require_relative '../models/system_check'
+require_relative '../models/system_check_submission'
+require_relative '../models/lesson'
+require_relative '../models/submittable'
+require_relative '../models/article'
+require_relative '../models/challenge'

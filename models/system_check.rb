@@ -1,7 +1,6 @@
-# For Exceeds Expecations
-require_relative "lesson.rb"
-class SystemCheck < Lesson
+require_relative 'lesson.rb'
 
+class SystemCheck < Lesson
   attr_reader :submissions
 
   def initialize(name, due_date)
@@ -35,5 +34,4 @@ class SystemCheck < Lesson
     end
     submitted
   end
-
 end

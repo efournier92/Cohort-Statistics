@@ -1,8 +1,6 @@
-# For Exceeds Expecations
 class SystemCheckSubmission
-
-  include Grade
   attr_reader :solution, :student, :grade
+  include Grade
 
   def initialize(solution, student)
     @solution = solution
@@ -24,7 +22,4 @@ class SystemCheckSubmission
       true
     end
   end
-end
-
-class InvalidGradeError < StandardError
 end
